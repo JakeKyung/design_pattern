@@ -43,8 +43,18 @@ $items = array(10000, 5000, 20000);
 
 $shoppingCart = new ShoppingCart(new DiscountCodeStrategy());
 echo $shoppingCart->calculateTotalCost($items);
-// output: (total cost of items - discount)
+// output: 31500
 
 $shoppingCart = new ShoppingCart(new ShippingCostStrategy());
 echo $shoppingCart->calculateTotalCost($items);
-// output: (total cost of items + shipping cost)
+// output: 35000
+
+$items = array(10000, 3000, 5000);
+
+$shoppingCart = new ShoppingCart(new DiscountCodeStrategy());
+echo $shoppingCart->calculateTotalCost($items);
+// output: 16200
+
+$shoppingCart = new ShoppingCart(new ShippingCostStrategy());
+echo $shoppingCart->calculateTotalCost($items);
+// output: 21000
