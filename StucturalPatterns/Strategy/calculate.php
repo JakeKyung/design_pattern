@@ -43,18 +43,22 @@ $items = array(10000, 5000, 20000);
 
 $shoppingCart = new ShoppingCart(new DiscountCodeStrategy());
 echo $shoppingCart->calculateTotalCost($items);
+echo PHP_EOL;
 // output: 31500
 
 $shoppingCart = new ShoppingCart(new ShippingCostStrategy());
 echo $shoppingCart->calculateTotalCost($items);
+echo PHP_EOL;
 // output: 35000
 
 $items = array(10000, 3000, 5000);
 
 $shoppingCart = new ShoppingCart(new DiscountCodeStrategy());
 echo $shoppingCart->calculateTotalCost($items);
+echo PHP_EOL;
 // output: 16200
 
 $shoppingCart = new ShoppingCart(new ShippingCostStrategy());
 echo $shoppingCart->calculateTotalCost($items);
+echo PHP_EOL;
 // output: 21000
