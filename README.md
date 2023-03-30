@@ -1,9 +1,13 @@
 ## design_pattern
-* refer : https://refactoring.guru/ko
+
+## Creational
+
+## Structural
+
+## Behavioral
 
 
-### Creational
 
-### Structural
-
-### Behavioral
+### refer
+* https://refactoring.guru/ko
+* https://kongulov.dev/
